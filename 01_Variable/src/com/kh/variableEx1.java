@@ -121,6 +121,7 @@ public class variableEx1 {
         System.out.println(문자1번);
         System.out.println(문자2번);
         System.out.println(소수1번);
+
     }
 
 }
