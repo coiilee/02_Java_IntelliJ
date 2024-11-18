@@ -31,6 +31,28 @@ public class ScannerEx1 {
         //console 창에서 어떤것을 입력해야 하는지 입력창표기를 위한 print 작성
         System.out.print("정수 입력 : ");
         int num1 = sc.nextInt(); //다음 입력된 정수를 얻어와 num1에 대입
-        System.out.print("num1에서 가져온 정수는 : "+num1);
+        System.out.println("num1에서 가져온 정수는 : "+num1);
+
+        System.out.print("정수입력 2 : ");
+        int num2 = sc.nextInt(); //정수입력 2: 가 나온다음, 입력된 정수를 얻어와 num2 대입
+
+        System.out.print("실수입력 : ");
+        double num3 = sc.nextDouble();
+
+        System.out.println("num2에서 가져온 정수는 :"+num2);
+        System.out.println("num3에서 가져온 실수는 :"+num3);
+
+        System.out.print("단어를 2가지 입력하세요 : "); //포도 오렌지 입력 후 enter
+        String 단어1 = sc.next();
+        String 단어2 = sc.next();
+
+        System.out.println("단어 두가지 출력하기 : "+단어1 + " " +단어2);
+
+        // *******************************************************************
+        // -next() / nextInt() / nextDouble() 등을 작성한 이후에
+        // nextLine()을 작성해야하는 상황이 오면
+        // nextLine()구문을 미리 한 번 작성하기
+
+
     }
 }
