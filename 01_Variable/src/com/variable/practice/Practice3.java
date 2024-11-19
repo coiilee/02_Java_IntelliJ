@@ -1,7 +1,5 @@
 package com.variable.practice;
 
-
-
 public class Practice3 {
     public static void main(String[] args) {
     int num1 = 10;
@@ -16,7 +14,7 @@ public class Practice3 {
     System.out.println(num2*dNum); //10.0
     System.out.println((float)num1); //10.0
 
-    System.out.println((float)num1/num2); //2.5
+    System.out.println(num1/(float)num2); //2.5
     System.out.println(dNum); //2.5
 
     System.out.println((int)fNum); //3
@@ -28,7 +26,7 @@ public class Practice3 {
 
     System.out.println(ch); //'A'
     System.out.println((int)ch); //65
-    System.out.println(ch+num1); //75
+    System.out.println(ch+num1); //75 (문자와 정수의 덧셈, 유니코드 값으로 계산됨 )
     System.out.println((char)(ch+num1)); //'K'
     }
 }
