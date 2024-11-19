@@ -11,15 +11,15 @@ public class LoopRun {
         // l.method1();
         //l.method2();
         // l.method3();
-        //l.method4();
+        l.method4();
 
         LoopEx2 l2 = new LoopEx2();
         //l2.while1();
         //l2.while2();
         //l2.while3();
         //l2.while4();
-        Menu menu = new Menu();
-        menu.order();
+//        Menu menu = new Menu();
+//        menu.order();
     }
 
 
