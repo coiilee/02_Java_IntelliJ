@@ -1,4 +1,4 @@
-/*
+package com.kh;/*
  * 범위 주석 = 문자로 작성한 설명을 작성
  */
 /**
@@ -19,15 +19,12 @@
  * class : - 자바 코드를 작성하는 영역을 나타내는 표기
  */
 
-//왼쪽에 만든 파일명, 파일명안 public class에 적힌 파일명과 다를 경우
-//빨간색으로 파일명과 클래스 옆에 작성한 파일명이 다르다는 에러가 뜸.
-    package com.kh;
+//
 public class JavaStart {
     // 자바 코드 실행 방법
     // 1) 위에 Run버튼 (재생 버튼 처럼 생긴 것) 클릭
     // 2) 실행 단축키 : ctrl + f11
     public static void main(String[] args) {
-
         // System.out.println();
         // -> ()안의 문자열을 console에 출력 후 줄바꿈하는 기능
         // System.out.print();

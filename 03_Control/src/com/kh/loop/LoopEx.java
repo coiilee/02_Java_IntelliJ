@@ -1,4 +1,4 @@
-package com.kh.Loop;
+package com.kh.loop;
 
 import java.util.Scanner;
 

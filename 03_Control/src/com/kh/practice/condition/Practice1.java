@@ -71,13 +71,10 @@ public class Practice1 {
 
         if (id.equals("myId") && pw.equals("myPassword12")) {
             System.out.println("로그인 성공");
-
         } else if (!id.equals("myId")) {
             System.out.println("아이디가 틀렸습니다.");
-
         } else if (!pw.equals("myPassword12")) {
             System.out.println("비밀번호가 틀렸습니다.");
-
         }else {
             System.out.println("아이디와 비밀번호가 모두 틀렸습니다.");
         }
