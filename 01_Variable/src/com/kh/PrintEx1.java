@@ -51,6 +51,6 @@ public class PrintEx1 {
             boolean study = true;
 
             //홍길동 18세 남성 키는 173.4cm이고, 공부 여부 : true
-        System.out.printf("%s %d세 %c성으로 키는 %.1f cm이고, 공부 여부 : true",name,age,gender,height,study);
+        System.out.printf("%s %d세 %c성으로 키는 %.1f cm이고, 공부 여부 :%b ",name,age,gender,height,study);
     }
 }

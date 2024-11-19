@@ -113,7 +113,7 @@ public class variableEx1 {
 
         char 문자1번 = '가'; //숫자로 44032 이름으로 저장
         char 문자2번 = 'a'; //숫자로     97 이름으로 저장
-        //char 문자3번 = "A"; char 문자에는 반드시 '' 감싸기!
+      //  char 문자3번 = 'A'; //char 문자에는 반드시 '' 감싸기!
 
         float 소수1번 = 3.14f;//Type mismatch: cannot convert from double to float
         System.out.println(문자1번 + 문자2번 + 소수1번);
