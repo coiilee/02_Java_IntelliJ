@@ -20,6 +20,9 @@ public class LoopRun {
         //l2.while4();
 //        Menu menu = new Menu();
 //        menu.order();
+
+        LoopDoWhile ldw = new LoopDoWhile();
+        ldw.method1();
     }
 
 
