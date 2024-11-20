@@ -6,7 +6,8 @@ public class ArrayPreRun {
       //  arrayPre1.practice3();
        // arrayPre1.practice4();
       // arrayPre1.practice5();
-       arrayPre1.practice6A();
+       //arrayPre1.practice6A();
+       arrayPre1.practice6B();
 
     }
 }
