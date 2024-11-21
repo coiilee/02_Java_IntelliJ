@@ -40,4 +40,8 @@ public class Void메서드 {
         System.out.println("아이디는 " + id +"입니다.");
         System.out.println("비밀번호는 " + pw +"입니다.");
     }
+
+    public void findId(String name, String email){
+        System.out.println("아이디는 kht 입니다.");
+    }
 }
