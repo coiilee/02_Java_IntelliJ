@@ -27,6 +27,7 @@ public class Return메서드 {
     public/*Static*/String method3(int xyz){
         return "숫자가 들어왔습니다.";
     }
+
     //3-1. 아이디 찾기
     public int findId(String name, int phone){
         return 123456789;

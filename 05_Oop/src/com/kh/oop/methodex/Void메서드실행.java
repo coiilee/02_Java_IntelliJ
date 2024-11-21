@@ -9,8 +9,10 @@ public class Void메서드실행 {
         String userID = "홍길동";
         v1.method2(userID);
 
+
         int age = 40;
         v1.method3(age);
+
 
 //        String name = "이다경";
 //        int age2 = 29;

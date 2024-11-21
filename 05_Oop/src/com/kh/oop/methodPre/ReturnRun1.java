@@ -4,8 +4,8 @@ public class ReturnRun1 {
 
     public static void main(String[] args) {
         ReturnPre1 r1 = new ReturnPre1();
-//        System.out.println(r1.findId("감길식",5678));
-//        System.out.println(r1.findId("홍길동",1234));
+        System.out.println(r1.findId("감길식",5678));
+       System.out.println(r1.findId("홍길동",1234));
 
         int x = 1;
         int y = 2;

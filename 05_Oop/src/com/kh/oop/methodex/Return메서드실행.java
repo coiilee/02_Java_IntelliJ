@@ -24,17 +24,23 @@ public class Return메서드실행 {
         System.out.println(메서드1);
 
 
+
+
         /*****매개변수 있는 Return 메서드 *****/
 
         int a =rm.method2(5); //5라는 값을 가지고 있는 상태
         //출력해달라는 요청 없기때문에 눈에 보이지 X
         System.out.println(a);
 
+
+        // 3-1
         System.out.println("이름이 박동식이고, 번호 뒤 네자리가 8857인 사람의 아이디 찾기");
 
         int b  = rm.findId("박동식", 885712);
         System.out.println("박동식의 숫자 아이디 : " + b);
 
+
+        //4. 매개변수 활용해서 return값 가져오기
         int result1 = rm.더하기(2,1);
         System.out.println(result1);
 

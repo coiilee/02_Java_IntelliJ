@@ -2,7 +2,7 @@ package com.kh.oop.basic;
 /*
 클래스 : 객체가 가져야할 속성(값), 기능(메서드)를 글(코드)로 작성해둔 문서(설계도)
         == 객체를 정의한 것
-* */
+*/
 
 //국민(Nation)객체를 만들기 위한 클래스
 public class Nation {
@@ -26,7 +26,7 @@ public class Nation {
         //만19세 이상 성인만 세금을 내는 경우
         if (age>=19) {
             System.out.print(name+ "님은 세금 납부 대상자입니다.");
-        }else {
+        } else {
             System.out.print(name+"님은"+age+"세 미성년자로 납부 대상자가 아닙니다.");
         }
     }

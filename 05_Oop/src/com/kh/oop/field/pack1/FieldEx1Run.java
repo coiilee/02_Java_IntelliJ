@@ -10,5 +10,7 @@ class FieldEx1Run{
         System.out.println(f1.프로텍트필드);
         System.out.println(f1.디폴트필드);
 
+
+
     }
 }
