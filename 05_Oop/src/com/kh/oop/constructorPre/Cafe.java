@@ -44,7 +44,6 @@ public class Cafe {
     //주문 총액 계산 price + quantity 전달
 
     public int result(int menuQuantity, int menuPrice) {
-
         return menuPrice * menuQuantity;
     }
 
