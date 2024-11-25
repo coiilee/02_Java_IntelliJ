@@ -22,7 +22,7 @@ public class NationRun {
         n.gender= 'F';
         n.introduce();
         n.납세의의무();//납세의 의무가 있는 사람을 확인
-
+        System.out.println("*******************");
         Nation n2 = new Nation();
         n2.name="박달래";
         n2.age = 33;
