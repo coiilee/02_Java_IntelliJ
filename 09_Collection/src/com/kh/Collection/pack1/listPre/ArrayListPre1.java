@@ -1,6 +1,7 @@
 package com.kh.Collection.pack1.listPre;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayListPre1 {
 
@@ -102,7 +103,23 @@ public class ArrayListPre1 {
         characterList.add('나');
         System.out.println("CharacterList : "+characterList);
 
-        //3.
+        //3. 논리 타입으로 제한을 두고 true, false 리스트에 저장
+        ArrayList<Boolean> booleanList = new ArrayList<Boolean>();
+        booleanList.add(true);
+        booleanList.add(false);
+        System.out.println("BooleanList : "+booleanList);
+
+        //4. 실수 (double) 타입 제한 doubleList / 1.5 3.24 저장하기
+        ArrayList<Double> doubleList = new ArrayList<Double>();
+        doubleList.add(1.5);
+        doubleList.add(3.14);
+        System.out.println("DoubleList : " + doubleList);
+
+        //5. float
+
+        //6. long
+        //7. short
+        //8. byte
 
     }
 }

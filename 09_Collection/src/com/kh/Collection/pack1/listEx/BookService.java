@@ -40,7 +40,6 @@ public class BookService {
         // 리스트의 길이 : size() -> List 에 저장된 요소(객체)의 개수를 반환
         System.out.println("list1에 저장된 값의 개수 : "+list1.size());
     }
-
     /*
     List에서 원하는 자료형만 넣을 수 있또록 자료형 제한 설정하기
     * */
@@ -65,6 +64,29 @@ public class BookService {
         System.out.println(list1);
         System.out.println("method2에 저장된 값의 개수 : "+list1.size()); //총 갯수 세기
     }
+
+    //책을 추가할 수 있도록
+    private ArrayList<Book> bookList = new ArrayList<>();
+    //한번에 책이름, 저자, 가격을 저장하고 볼 수 있도록 설정
+
+    //1. 책 추가하기 기능 만들자 !
+    public void addBook(String title, String author, int price){
+        Book b1 = new Book(title, author, price);
+        bookList.add(b1);
+        // bookList.add(new Book(title, author, price)); 와 동일
+        System.out.println(bookList);
+        System.out.println("책이 성공적으로 추가되었습니다.");
+
+    }
+
+    //3. 저장된 책 모두 확인하기
+    //               Book =  책제목,   저자,     가격      = 하나의 세트
+    // index0번에 저장된 값들 : [Book{title='나는책이ㅏ', author='kht', price=30000}]
+    public ArrayList<Book> getBookList() {
+        return bookList; //get 가지고 있는 모든 책 리스트를 호출해서 전달하기
+    }
+
+
 }
 
 
