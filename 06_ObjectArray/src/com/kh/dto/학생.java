@@ -1,22 +1,22 @@
 package com.kh.dto;
-//DTO : Data Transfer Object (값 전달용 객체)
+// DTO : Data Transfer Object ( 값 전달용 객체)
 public class 학생 {
-    //필드 인스턴스 변수 (=static이 없기 때문에) 멤버 변수라고도 함.
-    private String studentNumber;
-    private String studentName;
-    private char studentGender;
+    // 필드 인스턴스 변수(=static이 없음) 멤버 변수
+    private String studentNumber;// 학번
+    private String studentName; // 학생이름
+    private char gender;
 
-    //메서드(기본 생성자, 필수 생성자, Setter, Getter, ToString)
+    // 메서드(기본 생성자, 필수 생성자, Setter, Getter, ToString)
 
-    //기본생성자
+    // 기본생성자
     public 학생() {
     }
 
-    //필수생성자
-    public 학생(String studentNumber, String studentName, char studentGender) {
+    // 필수생성자
+    public 학생(String studentNumber, String studentName, char gender) {
         this.studentNumber = studentNumber;
         this.studentName = studentName;
-        this.studentGender = studentGender;
+        this.gender = gender;
     }
 
     //Setter
@@ -28,8 +28,8 @@ public class 학생 {
         this.studentName = studentName;
     }
 
-    public void setStudentGender(char studentGender) {
-        this.studentGender = studentGender;
+    public void setGender(char gender) {
+        this.gender = gender;
     }
 
     //Getter
@@ -41,17 +41,18 @@ public class 학생 {
         return studentName;
     }
 
-    public char getStudentGender() {
-        return studentGender;
+    public char getGender() {
+        return gender;
     }
 
     //toString
+
     @Override
     public String toString() {
         return "학생{" +
                 "studentNumber='" + studentNumber + '\'' +
                 ", studentName='" + studentName + '\'' +
-                ", studentGender=" + studentGender +
+                ", gender=" + gender +
                 '}';
     }
 }

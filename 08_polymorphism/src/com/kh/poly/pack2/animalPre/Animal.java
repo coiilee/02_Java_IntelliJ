@@ -7,9 +7,9 @@ public class Animal {
     public Animal() {
     }
 
-    public Animal(int age, String name) {
-        this.age = age;
+    public Animal(String name, int age) {
         this.name = name;
+        this.age = age;
     }
 
     public void setName(String name) {
@@ -30,12 +30,8 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Animal{" +
+        return "Animal" +
                 "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+                ", age=" + age ;
     }
 }
-
-
-
