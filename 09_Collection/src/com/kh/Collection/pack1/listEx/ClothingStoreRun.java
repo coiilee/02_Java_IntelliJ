@@ -15,7 +15,8 @@ public class ClothingStoreRun {
             System.out.println("\n--- 쇼핑몰 옷 관리 프로그램---");
             System.out.println("1.옷 추가");
             System.out.println("2. 옷 목록 조회");
-            System.out.println("3. 프로그램 종료");
+            System.out.println("3. 옷 제거하기");
+            System.out.println("4. 프로그램 종료");
             System.out.println("메뉴선택 : ");
             int choice = sc.nextInt();
             sc.nextLine(); //int에 남아있는 잔여 줄바꿈 지우기
@@ -29,6 +30,10 @@ public class ClothingStoreRun {
                         store.allClothing(); //Clothingstore에서 작성된 옷 모두 보기
                         break;
                         case 3:
+                            //옷 제거하기 기능 추가
+                            store.removeClothing();
+                            break;
+                        case 4:
                             System.out.println("옷가게를 종료합니다.");
                             return; //while문이 종료됨
                         default:

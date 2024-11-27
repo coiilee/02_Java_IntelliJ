@@ -36,10 +36,8 @@ public class BookServiceRun {
                     case 2:
                         System.out.print("지우고자 하는 책의 제목을 입력하세요 :");
                         String removeTitle = scanner.nextLine();
-
-                        //만약 책 제목이 존재한다면 책을 삭제했습니다.
-
-                        //만약 책이 없다면 책 제목을 찾을 수 없습니다.
+                        //
+                        bookService.removeBook(removeTitle);
                         break;
                         case 3:
 
