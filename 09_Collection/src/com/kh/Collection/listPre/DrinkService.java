@@ -16,12 +16,12 @@ public class DrinkService {
     }
     //3. Drink 음료 이름 가격 모두 조회
     public void allDrink(){
-        if(drinks.size()>0){
+        if(drinks.isEmpty()){
             System.out.println("등록된 메뉴가 없습니다.");
         } else {
             System.out.println("=======모든음료목록=======");
             for (Drink drink : drinks) {
-                System.out.println(drink);
+                System.out.println(drinks);
             }
         }
     }
