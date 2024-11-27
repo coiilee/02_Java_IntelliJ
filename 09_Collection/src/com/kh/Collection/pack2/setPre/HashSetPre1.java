@@ -30,8 +30,8 @@ public class HashSetPre1 {
         set.add("저녁");
         set.add("점심2");
         System.out.println(set); //set.ToString() 생략
-        //넣자고 작성한 순서대로 유지되는 것이 아님 
-        //[점심2,점심,100,3.14,저녁,true] 
+        //넣자고 작성한 순서대로 유지되는 것이 아님
+        //[점심2,점심,100,3.14,저녁,true]
 
         ArrayList list = new ArrayList();
         list.add(1);
@@ -55,16 +55,16 @@ public class HashSetPre1 {
         set.add(" 사과 ");
         //[포도,사과,바나나] 사과 바나나 포도 순서로 저장 x
         //사과는 중복이기 때문에 저장 x
-        //띄어쓰기사과, 띄어쓰기사과띄어쓰기 , 사과띄어쓰기 
-        //띄어쓰기 또한 글자의 일부분으로 생각하기 때문에 
-        //동일한 값이 들어가는 것처럼 보임 
+        //띄어쓰기사과, 띄어쓰기사과띄어쓰기 , 사과띄어쓰기
+        //띄어쓰기 또한 글자의 일부분으로 생각하기 때문에
+        //동일한 값이 들어가는 것처럼 보임
         System.out.println("set에 저장된 모든 리스트 출력 : "+set);
         System.out.println("개수 확인 : "+set.size());
-        set.remove("포도"); 
+        set.remove("포도");
         System.out.println("포도 제외한 모든 리스트 출력 : " +set);
-        //바나나가 set 안에 들어있는지 확인 
-        set.contains("바나나"); //결과가 들어있다면 true 없다면 false 
-        //결과를 보기 위해선 System.out.print로 출력해서 확인해야함 ! 
+        //바나나가 set 안에 들어있는지 확인
+        set.contains("바나나"); //결과가 들어있다면 true 없다면 false
+        //결과를 보기 위해선 System.out.print로 출력해서 확인해야함 !
         System.out.println("바나나가 들어있는지 확인 :" + set.contains("바나나"));
 
         //set에 저장된 내용 모두 삭제
@@ -73,7 +73,7 @@ public class HashSetPre1 {
         //isEmpty() 비어있으면 true 아니면 false
         System.out.println("제대로 모두 비우셨나요? "+set.isEmpty());
         System.out.println("set리스트 출력해서 목록이 비어있는지 확인 : " + set);
-        
+
     }
 
     //method3 HastSet이용해 자료형이 int를 이용해 10 200 3000 500 40 추가
@@ -188,23 +188,27 @@ public class HashSetPre1 {
         HashSet<Integer> lottoNumbers = new HashSet<>();
         //2. 중복 없이 6개의 번호 생성 (for문 이용 )
         //로또 숫자들이 총 0부터 5까지 6개 이하일 때만 for문을 반복한다.
-        for (int i = 0; lottoNumbers.size() < 6; i++) {
-            //어떤 숫자를 추가할 것이냐면 Math.random으로 가져온 숫자를 사용
-            //Math.random() = 0.0~1.0 사이의 소수를 출력
-            //Math.random() * 45
+        for(int i =0; lottoNumbers.size() < 6; i++){
+            // 어떤 숫자를 추가할 것이냐면 Math.random 으로 가져온 숫자를 사용
+            //  Math.random() = 0.0 ~ 1.0 사이의 소수를 출력  0.000000000001 ~ 0.9999999999999 사이 소수 출력
+            //  Math.random() * 45 = 45.23423252535235342523 앞에 (int) 를 붙여주면 . 뒤에 있는소수들이 버려짐
+            // (int) (Math.random() * 45)    소수점이 버려졌기 때문에 0부터 44까지의 숫자를 만듬
+            // 로또에는 0이라는 숫자가 없고, 45까지 숫자가 존재하기 때문에 모든 수 뒤에 +1을 붙여줌으로써
+            // 0 ~ 45자리 랜덤 숫자를 만들 수 있음
+            //        (Math.random() * 45) + 1;
             int num = (int) (Math.random() * 45) + 1;
             lottoNumbers.add(num);
         }
         System.out.println("lottoNumbers : " + lottoNumbers);
 
-        //로또 생방송 프로그램 번호를 하나씩 보여줄 때
-        /* 향상된 for문으로 변경하기 ->        int      lottoNumbers
-        for (
-        Iterator<Integer> it = lottoNumbers.iterator();
-        System.out.println("===로또번호===");
-        while (it.hasNext()) {
-            System.out.println(it.next());
-        }*/
+        // 로또 생방송 프로그램 번호를 하나씩 보여줄 것
+        /* 향상된 for문으로 변경하기   ->        int            lottoNumbers
+            Iterator<Integer> it = lottoNumbers.iterator();
+            System.out.println("=== 로또 번호 ===");
+            while(it.hasNext()){
+                System.out.println(it.next()); //로또 번호들이 순차적으로 하나씩 나옴
+            }
+         */
 
         for (int n: lottoNumbers) {
             System.out.println(n);
