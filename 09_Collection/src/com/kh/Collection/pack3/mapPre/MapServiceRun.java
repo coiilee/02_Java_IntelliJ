@@ -1,0 +1,10 @@
+package com.kh.Collection.pack3.mapPre;
+
+public class MapServiceRun {
+    public static void main(String[] args) {
+        MapService mapService = new MapService();
+       // mapService.method1();
+        //mapService.method2();
+        mapService.method3();
+    }
+}
