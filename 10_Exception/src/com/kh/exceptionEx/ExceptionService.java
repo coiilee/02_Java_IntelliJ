@@ -43,14 +43,7 @@ public class ExceptionService {
 
     //method2 발생한 문제를 유연하게 처리할 것 try-catch
     public void method2() {
-        try {
-            int arr[] = {1,2,3,4,5};
-            for(int i=0;i<=arr;i++){
-                System.out.println(arr[i]);
-            }
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+
         int arr[] = {1, 2, 3, 4, 5}; //index 0~4 이고, length = 5 임
         try { //문제가 생길 수 있지만 실행은 해볼 것
             for (int i = 0; i <= arr.length; i++) {
