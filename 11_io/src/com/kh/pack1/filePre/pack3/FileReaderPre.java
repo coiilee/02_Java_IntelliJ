@@ -15,19 +15,24 @@ public class FileReaderPre {
     * @param fileName = 파일 이름
     * */
 
-    public void readTxt(){
-        File file = new File(System.getProperty("user.dir")+"/Desktop/happyLunch.txt");
+    public void readTxt(String path , String fileName){
+        System.getProperty("user.home");
+        String locate = System.getProperty("user.home")+"/Desktop/happyLunch.txt";
+        File file = new File(path+fileName);
 
         try {
             if(file.exists()){
                 FileReader fr = new FileReader(file);
                 BufferedReader br = new BufferedReader(fr);
-
                 String line = br.readLine();
-
+                while((line = br.readLine()) != null){
+                    System.out.println(line);
+                }
+                br.close();
+                fr.close();
             }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println(e.getMessage()+" 에서 오류 발생");
         }
     }
 }
