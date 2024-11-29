@@ -1,16 +1,16 @@
 package com.kh.pack1.practice;
 
-public class Student {
+public class Student_1 {
     //이름 과목 점수
     private String name;
     private String subject;
     private int score;
 
 
-    public Student() {
+    public Student_1() {
     }
 
-    public Student( String name, String subject,int score) {
+    public Student_1(String name, String subject, int score) {
         this.score = score;
         this.subject = subject;
         this.name = name;

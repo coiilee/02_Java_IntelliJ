@@ -1,6 +1,6 @@
 package com.kh.pack1.practice;
 
-public class StudentRun {
+public class StudentRun_1 {
     public static void main(String[] args) {
       StudentController Controller = new StudentController();
 
