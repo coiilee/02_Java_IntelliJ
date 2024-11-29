@@ -1,4 +1,4 @@
-package com.kh.pack2;
+package com.kh.pack2.pre;
 
 import java.io.File;
 import java.io.FileWriter;
